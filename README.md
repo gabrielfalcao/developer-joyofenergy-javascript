@@ -57,7 +57,7 @@ These values are used in the code and in the following examples too.
 
 ## Requirements
 
-The project requires [Node v14](https://nodejs.org/).
+The present version of this project tests well against [Node v16](https://nodejs.org/en/blog/release/v16.16.0)
 
 ## Useful Node commands
 
@@ -66,8 +66,8 @@ project or running it.
 
 ### Install dependencies
 
-```console
-$ npm install
+```shell
+npm install
 ```
 
 ### Run the tests
@@ -76,14 +76,14 @@ There are two options to run the tests
 
 - Run the tests once
 
-  ```console
-  $ npm test
+  ```shell
+  npm test
   ```
 
 - Keep running the tests with every change
 
-  ```console
-  $ npm run test-watch
+  ```shell
+  npm run test-watch
   ```
 
 ### Run the application
@@ -92,14 +92,14 @@ Run the application which will be listening on port `8080`. There are two ways t
 
 - Run the application with the current code
 
-  ```console
-  $ npm start
+  ```shell
+  npm start
   ```
 
 - Run the application with reload on save
 
-  ```console
-  $ npm run dev
+  ```shell
+  npm run dev
   ```
 
 ## API
@@ -157,8 +157,8 @@ readings.
 
 The following POST request, is an example request using CURL, sends the readings shown in the table above.
 
-```console
-$ curl \
+```shell
+curl \
   -X POST \
   -H "Content-Type: application/json" \
   "http://localhost:8080/readings/store" \
@@ -234,8 +234,8 @@ Parameters
 
 Retrieving readings using CURL
 
-```console
-$ curl "http://localhost:8080/readings/read/smart-meter-0"
+```shell
+curl "http://localhost:8080/readings/read/smart-meter-0"
 ```
 
 Example output
@@ -305,8 +305,8 @@ Parameters
 
 Retrieving readings using CURL
 
-```console
-$ curl "http://localhost:8080/price-plans/compare-all/smart-meter-0"
+```shell
+curl "http://localhost:8080/price-plans/compare-all/smart-meter-0"
 ```
 
 Example output
@@ -345,8 +345,8 @@ Parameters
 
 Retrieving readings using CURL
 
-```console
-$ curl "http://localhost:8080/price-plans/recommend/smart-meter-0?limit=2"
+```shell
+curl "http://localhost:8080/price-plans/recommend/smart-meter-0?limit=2"
 ```
 
 Example output
